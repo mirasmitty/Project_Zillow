@@ -1,3 +1,6 @@
+# Files to ignore
+git_log_branch_tasha.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
