@@ -28,7 +28,11 @@ This machine learning project aims to train our models to predict how much of a 
 - Any other essential steps:
     - Next, we loaded the data by reading in the csv file, during which, we designated the `Weeks of pending` as a datetime object using Pandas, because the column was originally stored as strings. 
     - After dropping the null values from the dataframe, we defined the features used for prediction or analysis  `x = Mean Price Reduction Percetage` and the output we want to predict in a our machine learning models `y = Days to Pending`.
-    - We then used the `train_test_split` function from sklearn to split the features `x` and the target variable `y` into training and testing sets. 
+    - We then used the `train_test_split` function from skscikit-learn library to split the features `x` and the target variable `y` into training and testing sets. The resulting variables `x_train`, `x_test`, `y_train`, and `y_test` store teh training & testing sets for both features and the target variable. 
+        - After this step, we use `x_train` and `y_train` for training our machine learning models, and `x_test` and `y_test` for evaluating its performance on unseen data. This design is used to assess how well the model generalizes to new, unseen observations.
+    - After creating the Standar Scaler, fitting the Standard Scaler, and scaling the data, we used the `RandomForestRegressor` function from the scikit-learn library to train our Random Forest Regressor model.
+        - 
+
 
 ## Zillow Data Description
 
