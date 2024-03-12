@@ -5,6 +5,9 @@ Team Members:
 *	Hidy Vengalil 
 *	Tasha Christensen 
 *	Miranda Smith
+<p align="right">
+<img src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/DealOrNoDeal.png" width="500" height="500" border="10"/>
+</p>
 ---
 
 # Project Zillow Introduction 
