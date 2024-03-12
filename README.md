@@ -36,7 +36,7 @@ This machine learning project trains 3 different models to predict how much of a
 4. After creating the Standar Scaler, fitting the Standard Scaler, and scaling the data, we used the `RandomForestRegressor` function from the scikit-learn library to train our Random Forest Regressor model.
     * Then, we extract the feature importances from a trained Random Forest model (`rf_model`) using the `feature_importances` attribute 
         * `Feature importance`: a measure of the contribution of each feature to the model's predictive performance
-        
+
 5. The Feature Importances are visualized using a horizontal bar plot. The features are shown on the y-axis and their importances are represented by the length of the bars. This visualization provides insights into which features are more influential in making predictions with the Random Forest Regressor model. 
 <p align="center">
 <img src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/Features%20Importances%20Horizontal%20Plot.png" width="600" height="400" border="10"/>
@@ -47,9 +47,36 @@ This machine learning project trains 3 different models to predict how much of a
 <img src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/Seaborn%20HeatMap%20Missing%20Values.png" width="500" height="450" border="10"/>
 </p>
 
-7. During our preprocessing steps, we used the `OneHotEncoder` function from the scikit-learn library to encode the categorical features as binary vector of 0s and 1s, where each position in the vector corresponds to a unique category.
+7. Preprocessing for our data was completed using the `OneHotEncoder` function from the scikit-learn library to encode the categorical features as binary vector of 0s and 1s, where each position in the vector corresponds to a unique category.
 
-8. 
+8. After presenting the `RandomForestRegressor` again, the relevant metrics for RFR Model are as follows:
+    * The score is 0.9995553744147414.
+    * The r2 is 0.9995553744147414.
+    * The mean squared error is 1.3095197551880405e-08.
+    * The root mean squared error is 0.00011443424990744863.
+    * The standard deviation is 0.005426987263266367.
+    * The error is 5.7804842222217705e-05 
+
+9. We then used the `GradientBoostingRegressor` function from the scikit-learn library and the relevant metrics for GBR Model are as follows:
+    * The score is 0.9995463581799123.
+    * The r2 is 0.9995463581799123.
+    * The mean squared error is 1.3360745419963808e-08.
+    * The root mean squared error is 0.00011558869070961833.
+    * The standard deviation is 0.005426987263266367.
+    * The error is 6.293934425514186e-05 
+
+10. We then used the `XGBRegressor` function from the scikit-learn library and the relevant metrics for XGB Model are as follows:
+    * The score is 0.998024236380367.
+    * The r2 is 0.998024236380367.
+    * The mean squared error is 5.8190567013516395e-08.
+    * The root mean squared error is 0.00024122721035056636.
+    * The standard deviation is 0.005426987263266367.
+    * The error is 0.00013350071454126876 
+
+11. We then used the `GridSearchCV` function from the scikit-learn library to optimize the hyperparameters of the XGB model, because it was our lowest-scoring model with a 99.8% accuracy. The best fit 
+
+
+
 
 ## Zillow Data Description
 
