@@ -29,10 +29,10 @@ This machine learning project aims to train our models to predict how much of a 
 1. We loaded the data by reading in the csv file, during which, we designated the `Weeks of pending` as a datetime object using Pandas, because the column was originally stored as strings. 
 2. After dropping the null values from the dataframe, we defined the features used for prediction (`x = Mean Price Reduction Percetage`) and the output we want to predict in a our machine learning models (`y = Days to Pending`).
 3. We then used the `train_test_split` function from skscikit-learn library to split the features (`x`) and the target variable (`y`) into training and testing sets. The resulting variables `x_train`, `x_test`, `y_train`, and `y_test` store the training & testing sets for both features and the target variable. 
-    3. After this step, we use `x_train` and `y_train` for training our machine learning models, and `x_test` and `y_test` for evaluating its performance on unseen data. This design is used to assess how well the model generalizes to new, unseen observations.
+    * After this step, we use `x_train` and `y_train` for training our machine learning models, and `x_test` and `y_test` for evaluating its performance on unseen data. This design is used to assess how well the model generalizes to new, unseen observations.
 4. After creating the Standar Scaler, fitting the Standard Scaler, and scaling the data, we used the `RandomForestRegressor` function from the scikit-learn library to train our Random Forest Regressor model.
-    4. Then, we extract the feature importances from a trained Random Forest model (`rf_model`) using the `feature_importances` attribute 
-        4. `Feature importance`: a measure of the contribution of each feature to the model's predictive performance
+    * Then, we extract the feature importances from a trained Random Forest model (`rf_model`) using the `feature_importances` attribute 
+        * `Feature importance`: a measure of the contribution of each feature to the model's predictive performance
 5. Finally, the feature importances are visulalzied using a horizontal bar plot. The features are shown on the y-axis and their importances are represented by the length of the bars. The Title of the plot is set to `Feature Importance` and the x-axis is set to `Feature Importance`; This visualization provides insights inot which features are more influential in making predictions with the Random Forest Regressor model. 
 
 
