@@ -94,7 +94,7 @@ Outline how users can utilize your project. Include examples and code snippets t
             * <samp>Because R-squared values range from 0 to 1, where 1 indicates a perfect fit, a score of 0.9995553744147414 indicates that the model explains approximately 99.96% of the variance in the target variable.</samp>
             * <samp>A very small (MSE) mean squared error (1.3095197551880405e-08) indicates that, on average, the model's predictions are very close to the actual values.</samp>
             * <samp>The standard deviation is a measure of the amount of variation in a set of values. In this context, it's associated with the residuals (the difference between predicted and actual values). A smaller standard deviation (0.005426987263266367) indicates less variability in the residuals.</samp>
-* Summary: RFR Model appears to be performing exceptionally well, with high accuracy and precision in predicting the target variable. 
+* <ins>Summary</ins>: RFR Model appears to be performing exceptionally well, with high accuracy and precision in predicting the target variable. 
 
 
 9. We then used the `GradientBoostingRegressor` function from the scikit-learn library and the relevant metrics for GBR Model are as follows:
@@ -108,7 +108,7 @@ Outline how users can utilize your project. Include examples and code snippets t
             * <samp>The score (R-squared) is a measure of how well the regression model explains the variance in the target variable. A high R-squared value, 0.9995463581799123, indicates that the model explains a large portion of the variance in the target variable, approximately 99.95%. </samp>
             * <samp>The root mean squared error is the square root of the mean sqaured error and is expressed in the same units as the target variable. A small RMSE (0.00011558869070961833) suggests that, on average, the model's predictions are close to the actual values.</samp>
             * <samp>A small error value (6.293934425514186e-05 = 0.00006293934425514186) suggests that, on average, the model's predictions are very close to the actual values</samp>
-* Summary: the outcome metrics for the GradientBoostingRegressor Model indicate excellent performance. The model is explaining a large proportion  of the variance in the target variable, approximately 99.95%, and the predictions are very accurate. 
+* <ins>Summary</ins>: the outcome metrics for the GradientBoostingRegressor Model indicate excellent performance. The model is explaining a large proportion  of the variance in the target variable, approximately 99.95%, and the predictions are very accurate. 
 
 10. We then used the `XGBRegressor` function from the scikit-learn library and the relevant metrics for XGB Model are as follows:
     * The score is 0.998024236380367.
@@ -119,7 +119,7 @@ Outline how users can utilize your project. Include examples and code snippets t
     * The error is 0.00013350071454126876 
         * The results of the XGBR Model metrics reveal important information about our XGBR model: 
             * <samp>A high R-squared value, 0.998024236380367, indicates that the model explains a large portion of the varaince in the target variable, approximately 99.80%. Interestingly, this is our lowest scoring model. </samp>
-* Summary: the outcome metrics for the XGBRegressor Model indicate excellent performance. The model is explaining a large proportion  of the variance in the target variable, approximately 99.80%, and the predictions are very accurate. As this is our lowest scoring model, we will attempt to find the "best fit" for this model. 
+* <ins>Summary</ins>: the outcome metrics for the XGBRegressor Model indicate excellent performance. The model is explaining a large proportion  of the variance in the target variable, approximately 99.80%, and the predictions are very accurate. As this is our lowest scoring model, we will attempt to find the "best fit" for this model. 
 
 11. We then used the `GridSearchCV` function from the scikit-learn library to optimize the hyperparameters of the XGB model, because it was our lowest-scoring model with a 99.8% accuracy. The best fit 
 
