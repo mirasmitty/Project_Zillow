@@ -5,7 +5,7 @@ Zillow Data Description
 
 ---
 
-# Project Zillow
+# Project Zillow Introduction
 
 This machine learning project aims to train our models to predict how much of a price cut (%) a listed house in Detroit will receive based on how long it’s been on the market (number of weeks)? This project analyzes publicly avaliable Zillow data (previously smoothed by Zillow), and collected on a weekly basis. Our models specifically focus on 315 weeks of data from Detroit (394532 = ID); however, two weeks on this data were designated as Null. Therefore, after remvoing the week of April 11, 2020 & September 9, 2021, the machine learning models used 313 weeks of Detroit data. 
 
@@ -25,7 +25,7 @@ This machine learning project aims to train our models to predict how much of a 
     - `from xgboost import XGBRegressor`
     - `from sklearn.model_selection import GridSearchCV` (for XGBRegressor)
 
-### Essential Steps to run our machine learning models: 
+### Steps to Run Machine Learning Models: 
 1. We loaded the data by reading in the csv file, during which, we designated the `Weeks of pending` as a datetime object using Pandas, because the column was originally stored as strings. 
 2. After dropping the null values from the dataframe, we defined the features used for prediction (`x = Mean Price Reduction Percetage`) and the output we want to predict in a our machine learning models (`y = Days to Pending`).
 3. We then used the `train_test_split` function from skscikit-learn library to split the features (`x`) and the target variable (`y`) into training and testing sets. The resulting variables `x_train`, `x_test`, `y_train`, and `y_test` store the training & testing sets for both features and the target variable. 
