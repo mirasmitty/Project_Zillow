@@ -18,7 +18,7 @@ This machine learning project develops three distinct models aimed at predicting
 ## Zillow's Data Description
 - `Days to Pending`: This metric measures the duration it takes for homes in a specific area to transition from being listed for sale to pending status on Zillow.com. It reflects the average or median number of days it took for homes that entered pending status within the reported week. Unlike the previous "Days on Zillow" metric, Days to Pending excludes the time period during which a home is under contract before it is sold.
 - `Share of Listings With a Price Cut`: This metric calculates the proportion of distinct properties that have a final list price at the conclusion of the month lower than the initial list price at the beginning of the month. It is determined by dividing the number of unique properties with a reduced list price by the total number of unique properties that had an active listing at any time during the month.
-- `Price Cuts`: This data presents the average and median reduction in listing prices within a specified region over a certain timeframe. It is represented both in monetary terms ($) and as a <ins>percentage (%) of the original list price</ins>.
+- `Price Cuts`: This data presents the average and median reduction in listing prices within a specified region over a certain timeframe. It is represented both in monetary terms ($) and as a **percentage (%) of the original list price**.
 
 #### Price Cuts
 - CThe mean price cut for listings in a Detroit during a given time period, expressed as a percentage (%) of list price.
