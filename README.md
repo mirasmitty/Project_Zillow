@@ -1,7 +1,3 @@
-# Project_Zillow
-
-All data is smoothed and collected on a weekly basis
-
 Zillow Data Description
 - `Days to Pending`: How long it takes homes in a region to change to pending status on Zillow.com after first being shown as for sale. The reported figure indicates the number of days (mean or median) that it took for homes that went pending during the week being reported, to go pending. This differs from the old “Days on Zillow” metric in that it excludes the in-contract period before a home sells.
 - `Share of Listings With a Price Cut`: The number of unique properties with a list price at the end of the month that’s less than the list price at the beginning of the month, divided by the number of unique properties with an active listing at some point during the month.
@@ -11,7 +7,7 @@ Zillow Data Description
 
 # Project Zillow
 
-Can we train our machine learning models to predict how much of a price cut (%) a listed house in Detroit will receive based on how long it’s been on the market? This project focuses on analyzing publicly avaliable Zillow data (which has been previously smoothed by Zillow), and collected on a weekly basis. The models specifically focus on 315 weeks of data from Detroit (394532 = ID); however, two weeks on this data were designated as Null. Therefore, after remvoing the week of April 11, 2020 & September 9, 2021, the machine learning models used 313 weeks of Detroit data. 
+This machine learning project aims to train our models to predict how much of a price cut (%) a listed house in Detroit will receive based on how long it’s been on the market (number of weeks)? This project analyzes publicly avaliable Zillow data (previously smoothed by Zillow), and collected on a weekly basis. The models specifically focus on 315 weeks of data from Detroit (394532 = ID); however, two weeks on this data were designated as Null. Therefore, after remvoing the week of April 11, 2020 & September 9, 2021, the machine learning models used 313 weeks of Detroit data. 
 
 ## Getting Started
 
@@ -30,6 +26,9 @@ Can we train our machine learning models to predict how much of a price cut (%) 
     - `from sklearn.model_selection import GridSearchCV` (for XGBRegressor)
 
 - Any other essential steps:
+    - Next, we loaded the data by reading in the csv file, during which, we designated the `Weeks of pending` as a datetime object using Pandas, because the column was originally stored as strings. 
+    - After dropping the null values from the dataframe, we defined the features used for prediction or analysis  `x = Mean Price Reduction Percetage` and the output we want to predict in a our machine learning models `y = Days to Pending`.
+    - We then used the `train_test_split` function from sklearn to split the features `x` and the target variable `y` into training and testing sets. 
 
 ## Zillow Data Description
 
