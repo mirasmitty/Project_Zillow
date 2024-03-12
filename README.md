@@ -35,7 +35,7 @@ This machine learning project trains 3 different models to predict how much of a
         * `Feature importance`: a measure of the contribution of each feature to the model's predictive performance
 5. The Feature Importances are visulalzied using a horizontal bar plot. The features are shown on the y-axis and their importances are represented by the length of the bars. This visualization provides insights into which features are more influential in making predictions with the Random Forest Regressor model. 
 <p align="center">
-<img src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/Features%20Importances%20Horizontal%20Plot.png" width="400" height="400" border="10"/>
+<img src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/Features%20Importances%20Horizontal%20Plot.png" width="600" height="400" border="10"/>
 </p>
 
 
