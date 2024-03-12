@@ -120,8 +120,10 @@ These models were compared, and it was determined that XGB performed the worst a
 <img src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/RFR_GBR_XGBR_Plot.png" width="600" height="500" border="10"/>
 </p>
 
-11. We then used the `GridSearchCV` function from the scikit-learn library to optimize the hyperparameters of the XGB model, because it was our lowest-scoring model with a 99.8% accuracy. The best fit 
-
+11. Finally, using Grid Search Cross Validation, to perform a hyperparameter tuning for the XGBoost Regressor model; the code imports the `GridSearchCV` class from scikit-learn & the `XGBRegressor` class from the XGBoost library. The evaluation metric to optimize during the grid search, in this case, the "negative mean absolute error", is set as the parameter `scoring`. The negative mean absolute error is used, because of conventional optimization and consistency. The following "best fit model" negates the negative mean absolute error values, and because lower values are desirable, the optimization seeks to minimize the error. 
+<p align="center">
+<img src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/ALL_MODELS_PLOT.png" width="600" height="500" border="10"/>
+</p>
 
 
 ---
