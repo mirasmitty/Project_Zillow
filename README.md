@@ -7,11 +7,11 @@ Zillow Data Description
 
 # Project Zillow
 
-This machine learning project aims to train our models to predict how much of a price cut (%) a listed house in Detroit will receive based on how long it’s been on the market (number of weeks)? This project analyzes publicly avaliable Zillow data (previously smoothed by Zillow), and collected on a weekly basis. The models specifically focus on 315 weeks of data from Detroit (394532 = ID); however, two weeks on this data were designated as Null. Therefore, after remvoing the week of April 11, 2020 & September 9, 2021, the machine learning models used 313 weeks of Detroit data. 
+This machine learning project aims to train our models to predict how much of a price cut (%) a listed house in Detroit will receive based on how long it’s been on the market (number of weeks)? This project analyzes publicly avaliable Zillow data (previously smoothed by Zillow), and collected on a weekly basis. Our models specifically focus on 315 weeks of data from Detroit (394532 = ID); however, two weeks on this data were designated as Null. Therefore, after remvoing the week of April 11, 2020 & September 9, 2021, the machine learning models used 313 weeks of Detroit data. 
 
 ## Getting Started
 
-- Using Google Collaborator installing dependencies:
+- Using Google Collaborator & installing dependencies:
     - `import pandas as pd`
     - `import numpy as np`
     - `from sklearn.preprocessing import StandardScaler`
@@ -26,12 +26,13 @@ This machine learning project aims to train our models to predict how much of a 
     - `from sklearn.model_selection import GridSearchCV` (for XGBRegressor)
 
 ### Essential Steps to run our machine learning models: 
-* Next, we loaded the data by reading in the csv file, during which, we designated the `Weeks of pending` as a datetime object using Pandas, because the column was originally stored as strings. 
-* After dropping the null values from the dataframe, we defined the features used for prediction or analysis  `x = Mean Price Reduction Percetage` and the output we want to predict in a our machine learning models `y = Days to Pending`.
-* We then used the `train_test_split` function from skscikit-learn library to split the features `x` and the target variable `y` into training and testing sets. The resulting variables `x_train`, `x_test`, `y_train`, and `y_test` store the training & testing sets for both features and the target variable. 
-    * After this step, we use `x_train` and `y_train` for training our machine learning models, and `x_test` and `y_test` for evaluating its performance on unseen data. This design is used to assess how well the model generalizes to new, unseen observations.
-* After creating the Standar Scaler, fitting the Standard Scaler, and scaling the data, we used the `RandomForestRegressor` function from the scikit-learn library to train our Random Forest Regressor model.
-    * 
+1. We loaded the data by reading in the csv file, during which, we designated the `Weeks of pending` as a datetime object using Pandas, because the column was originally stored as strings. 
+2. After dropping the null values from the dataframe, we defined the features used for prediction or analysis  `x = Mean Price Reduction Percetage` and the output we want to predict in a our machine learning models `y = Days to Pending`.
+3. We then used the `train_test_split` function from skscikit-learn library to split the features `x` and the target variable `y` into training and testing sets. The resulting variables `x_train`, `x_test`, `y_train`, and `y_test` store the training & testing sets for both features and the target variable. 
+    3. After this step, we use `x_train` and `y_train` for training our machine learning models, and `x_test` and `y_test` for evaluating its performance on unseen data. This design is used to assess how well the model generalizes to new, unseen observations.
+4. After creating the Standar Scaler, fitting the Standard Scaler, and scaling the data, we used the `RandomForestRegressor` function from the scikit-learn library to train our Random Forest Regressor model.
+    4. Then, we extract the feature importances from a trained Random Forest model (`rf_model`) using the `feature_importances_` attribute 
+        4. `Feature importance`: a measure of the contribution of each feature to the model's predictive performance
 
 
 ## Zillow Data Description
