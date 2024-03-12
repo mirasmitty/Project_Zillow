@@ -16,16 +16,14 @@ Can we train our machine learning models to predict how much of a price cut (%) 
 ## Zillow Data Description
 
 ### Days to Pending
-- Indicator of how long it takes homes in a region to change to pending status on Zillow.com after being listed for sale.
-- The reported figure represents the mean or median number of days it took for homes to go pending during the reported week.
-- Excludes the in-contract period before a home sells.
-
-### Share of Listings With a Price Cut
-- Calculated as the number of unique properties with a list price at the end of the month that's less than the list price at the beginning of the month, divided by the number of unique properties with an active listing at some point during the month.
+How long it takes homes in a Detroit to change to pending status on Zillow.com after first being shown as for sale. The reported figure indicates the mean number of days that it took for homes that went pending during the week being reported, to go pending.
 
 ### Price Cuts
-- Provides mean and median price cut information for listings in a given region during a specified time period.
-- Expressed in both dollars ($) and as a percentage (%) of the list price.
+- CThe mean price cut for listings in a Detroit during a given time period, expressed as a percentage (%) of list price.
+
+### Time
+The data was collected weekly across 315 weeks, allowing us to measure data across season and time. 
+
 
 ## Machine Learning Models
 
@@ -39,8 +37,20 @@ These models were compared, and it was determined that XGB performed the worst a
 
 ## Getting Started
 
-- Include information on installing dependencies:
-- Setting up the environment:
+- Using Google Collaborator installing dependencies:
+    - `import pandas as pd`
+    - `import numpy as np`
+    - `from sklearn.preprocessing import StandardScaler`
+    - `from sklearn.model_selection import train_test_split`
+    - `from sklearn.ensemble import RandomForestRegressor`
+    - `import matplotlib.pyplot as plt`
+    - `from sklearn.metrics import mean_absolute_error,r2_score, mean_squared_error`
+    - `import seaborn as sns`
+    - `from sklearn.preprocessing import OneHotEncoder`
+    - `from sklearn.ensemble import GradientBoostingRegressor`
+    - `from xgboost import XGBRegressor`
+    - `from sklearn.model_selection import GridSearchCV` (for XGBRegressor)
+
 - Any other essential steps:
 
 ## Usage
