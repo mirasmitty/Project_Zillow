@@ -39,7 +39,9 @@ These models were compared, and it was determined that XGB performed the worst a
 
 ## Getting Started
 
-Provide instructions on how to get started with your project. Include information on installing dependencies, setting up the environment, and any other essential steps.
+- Include information on installing dependencies:
+- Setting up the environment:
+- Any other essential steps:
 
 ## Usage
 
@@ -49,18 +51,8 @@ Outline how users can utilize your project. Include examples and code snippets t
 
 Highlight key findings or results from your analysis.
 
-## Contributing
+[Advanced-Regression-Analysis-Reference]
 
-If you wish to contribute to this project, please follow the [Contributing Guidelines](CONTRIBUTING.md).
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Contact
-
-For any questions or further information, feel free to contact [Your Name] at [your.email@example.com].
+[Advanced-Regression-Analysis-Reference]: https://github.com/tatha04/Housing-Prices-Advanced-Regression-Techniques/blob/main/Housing.ipynb
 
 ---
-
-Feel free to customize this template based on the specific details of your project. Including sections such as "Getting Started," "Results," and "Contact" can provide additional clarity and context for users and contributors.
