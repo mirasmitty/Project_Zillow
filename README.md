@@ -9,7 +9,7 @@ Team Members:
 
 # Project Zillow Introduction 
 
-This machine learning project trains 3 different models to predict how much of a price cut (%) a listed house in Detroit will receive based on how long it’s been on the market (weeks of pending)? This project analyzes publicly avaliable Zillow data (previously smoothed by Zillow), and collected on a weekly basis. Our models specifically focus on 315 weeks of data from Detroit (394532 = ID); however, two of the provided weeks did not have any data, and thus, deemed as Null. After remvoing the weeks of April 11, 2020 and September 9, 2021, the machine learning models used 313 weeks of Detroit data. 
+This machine learning project develops three distinct models aimed at predicting the percentage of price reduction that a listed house in Detroit is likely to undergo based on its duration on the market (in weeks). The analysis utilizes publicly accessible Zillow data, which has been previously processed by Zillow and is updated on a weekly basis. The focus of the models is on 315 weeks of data specifically from Detroit, identified by the ID 394532. However, it was found that two of the provided weeks lacked data & therefore, were deemed as Null. After removing the weeks of April 11, 2020, & September 9, 2021, the machine learning models were trained using 313 weeks of data from Detroit.
 * [Advanced-Regression-Analysis] reference found on GitHub and available for other's to learn from according to (2021) MIT License
 
 [Advanced-Regression-Analysis]: https://github.com/tatha04/Housing-Prices-Advanced-Regression-Techniques/blob/main/Housing.ipynb
@@ -24,7 +24,7 @@ This machine learning project trains 3 different models to predict how much of a
 - CThe mean price cut for listings in a Detroit during a given time period, expressed as a percentage (%) of list price.
 
 #### Time
-The data was collected weekly across 315 weeks, allowing us to measure data across season and time. 
+The data was collected weekly across ~~315~~313 weeks, allowing us to measure data across season and time. 
 
 
 ## Machine Learning Models
