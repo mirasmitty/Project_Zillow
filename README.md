@@ -13,6 +13,24 @@ Zillow Data Description
 
 Can we train our machine learning models to predict how much of a price cut (%) a listed house in Detroit will receive based on how long it’s been on the market? This project focuses on analyzing publicly avaliable Zillow data (which has been previously smoothed by Zillow), and collected on a weekly basis. The models specifically focus on 315 weeks of data from Detroit (394532 = ID); however, two weeks on this data were designated as Null. Therefore, after remvoing the week of April 11, 2020 & September 9, 2021, the machine learning models used 313 weeks of Detroit data. 
 
+## Getting Started
+
+- Using Google Collaborator installing dependencies:
+    - `import pandas as pd`
+    - `import numpy as np`
+    - `from sklearn.preprocessing import StandardScaler`
+    - `from sklearn.model_selection import train_test_split`
+    - `from sklearn.ensemble import RandomForestRegressor`
+    - `import matplotlib.pyplot as plt`
+    - `from sklearn.metrics import mean_absolute_error,r2_score, mean_squared_error`
+    - `import seaborn as sns`
+    - `from sklearn.preprocessing import OneHotEncoder`
+    - `from sklearn.ensemble import GradientBoostingRegressor`
+    - `from xgboost import XGBRegressor`
+    - `from sklearn.model_selection import GridSearchCV` (for XGBRegressor)
+
+- Any other essential steps:
+
 ## Zillow Data Description
 
 ### Days to Pending
@@ -34,24 +52,6 @@ In our analysis, we employed the following machine learning models:
 - Extreme Gradient Boosting (XGB)
 
 These models were compared, and it was determined that XGB performed the worst among them, which is why we used a best fit for that model, in order to create a.
-
-## Getting Started
-
-- Using Google Collaborator installing dependencies:
-    - `import pandas as pd`
-    - `import numpy as np`
-    - `from sklearn.preprocessing import StandardScaler`
-    - `from sklearn.model_selection import train_test_split`
-    - `from sklearn.ensemble import RandomForestRegressor`
-    - `import matplotlib.pyplot as plt`
-    - `from sklearn.metrics import mean_absolute_error,r2_score, mean_squared_error`
-    - `import seaborn as sns`
-    - `from sklearn.preprocessing import OneHotEncoder`
-    - `from sklearn.ensemble import GradientBoostingRegressor`
-    - `from xgboost import XGBRegressor`
-    - `from sklearn.model_selection import GridSearchCV` (for XGBRegressor)
-
-- Any other essential steps:
 
 ## Usage
 
