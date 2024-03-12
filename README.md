@@ -84,7 +84,7 @@ Outline how users can utilize your project. Include examples and code snippets t
 
 8. After presenting the `RandomForestRegressor` again, the relevant metrics for RFR Model are as follows:
     * The score is 0.9995553744147414.
-    * The r2 is 0.9995553744147414.
+   `#000000` * The r2 is 0.9995553744147414.
     * The mean squared error is 1.3095197551880405e-08.
     * The root mean squared error is 0.00011443424990744863.
     * The standard deviation is 0.005426987263266367.
