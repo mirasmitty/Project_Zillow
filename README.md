@@ -115,7 +115,7 @@ These models were compared, and it was determined that XGB performed the worst a
     * The error is 0.00013350071454126876 
         * The results of the XGBR Model metrics reveal important information about our XGBR model: 
             * <samp>A high R-squared value, 0.998024236380367, indicates that the model explains a large portion of the varaince in the target variable, approximately 99.80%. Interestingly, this is our lowest scoring model. </samp>
-* <ins>XGBR Summary</ins>: the outcome metrics for the XGBRegressor Model indicate excellent performance. The model is explaining a large proportion  of the variance in the target variable, approximately 99.80%, and the predictions are very accurate. As this is our lowest scoring model, we will attempt to find the "best fit" for this model. 
+* <ins>XGBR Summary</ins>: the outcome metrics for the XGBRegressor Model indicate excellent performance. The model is explaining a large proportion  of the variance in the target variable, approximately 99.80%, and the predictions are very accurate. Below is a visualization of the RFR, GBR, and XGBR models plotted against each other.
 <p align="center">
 <img src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/RFR_GBR_XGBR_Plot.png" width="600" height="500" border="10"/>
 </p>
