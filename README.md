@@ -136,7 +136,9 @@ These models were compared, and it was determined that XGB performed the worst a
 
 * Negative mean absolute error is a performance metric used in regression problems, typically with machine learning. Thea mean absolute error (MAE) is a measure of the average absolute differences between the predicted and actual values. The negative version is used in certain libraries like scikit-learn for optimization purposes, as it aligns with the convention that high values are better for the optimization process. 
     * <ins>Mean Absolute Error (MAE)</ins>: is calculated as the averaage of the absolute differences between predicted and actual values.
-    * This is an inline math expression $MAE = {1 \over n} {\sum_{i=1}^n} |y_i - \hat{y}_i|$
+    * This is an inline math expression $MAE = (1/n) * Σ(i=1 to n) |y_i - ŷ_i|
+    
+     {1 \over n} {\sum_{i=1}^n} |y_i - \hat{y}_i|$
     
 
 ## Results:
