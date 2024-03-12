@@ -12,6 +12,15 @@ This machine learning project trains 3 different models to predict how much of a
 
 [Advanced-Regression-Analysis]: https://github.com/tatha04/Housing-Prices-Advanced-Regression-Techniques/blob/main/Housing.ipynb
 
+Team Members:
+
+•	Stephanie Santiago 
+•	Molleigh Hughes 
+•	Hidy Vengalil 
+•	Tasha Christensen 
+•	Miranda Smith
+
+
 
 ## Zillow Data Description
 
