@@ -130,9 +130,10 @@ These models were compared, and it was determined that although the r-squared of
 
     
 
-## Results:
+## Conclusion
+
 <p align="center">
-<img src="" width="600" height="500" border="10"/>
+<img src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/all_models_results.png" width="400" height="300" border="10"/>
 </p>
 
 
