@@ -25,10 +25,10 @@ This machine learning project develops three distinct models aimed at predicting
 
 In our analysis, we employed the following machine learning models:
 
-- Random Forest Regressor (RFR)
-- GradientBoosting Regressor (GBR)
-- Extreme Gradient Boosting (XGB)
-- GridSearchCV (model = XGBRegressor)
+- **Random Forest Regressor** (RFR): a versatile machine-learning approach that leverages the predictions of numerous decision trees to mitigate overfitting and enhance accuracy. RFR is a supervised learning algorithm and can be applied to both classification and regression. 
+- **GradientBoosting Regressor** (GBR): a machine learning algorithm that works by sequentially fitting multiple decision trees, where each tree corrects the errors of the previous one. GBR is well-suited for regression tasks, aiming to predict continuous numerical values. This iterative process gradually improves the model's predictive accuracy, and combines the predictive power of multiple weak learners (decision trees) to create a robust and accurate predictive model. 
+- **Extreme Gradient Boosting Regressor** (XGBR):
+- **GridSearchCV** (model = XGBRegressor):
 
 These models were compared, and it was determined that XGB performed the worst among them, which is why we used a best fit for that model by using GridSearchCV.
 
