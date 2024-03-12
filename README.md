@@ -135,10 +135,12 @@ These models were compared, and it was determined that although the r-squared of
 *   Each of our models and their results: 
 <img style="float: center;" src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/all_models_results.png">
 
-*   Mean Days Listing to Pending Trends (Tableau): Notice the dramatic drop the number of days from June 2020 to June 2022!
+### Mean Days Listing to Pending Trends
+- Notice the dramatic drop the number of days from June 2020 to June 2022!
 <img style="float: center;" src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/TableauMeanDaysToPending.png">
 
-*   Mean Price Reduction Percentage Trends (Tableau): Notice the dramatic drop in the Price Reduction Percentage (%) from June 2020 to February 2021!
+### Mean Price Reduction Percentage Trends
+- Notice the dramatic drop in the Price Reduction Percentage (%) from June 2020 to February 2021!
 <img style="float: center;" src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/TableauPriceReductions.png">
 
 ---
