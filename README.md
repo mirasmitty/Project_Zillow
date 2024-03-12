@@ -5,9 +5,37 @@ Zillow Data Description
 
 ---
 
-# Project Zillow Introduction
+# Project Zillow Introduction 
 
 This machine learning project trains 3 different models to predict how much of a price cut (%) a listed house in Detroit will receive based on how long it’s been on the market (weeks of pending)? This project analyzes publicly avaliable Zillow data (previously smoothed by Zillow), and collected on a weekly basis. Our models specifically focus on 315 weeks of data from Detroit (394532 = ID); however, two of the provided weeks did not have any data, and thus, deemed as Null. After remvoing the week of April 11, 2020 & September 9, 2021, the machine learning models used 313 weeks of Detroit data. 
+
+## Zillow Data Description
+
+### Days to Pending
+How long it takes homes in a Detroit to change to pending status on Zillow.com after first being shown as for sale. The reported figure indicates the mean number of days that it took for homes that went pending during the week being reported, to go pending.
+
+### Price Cuts
+- CThe mean price cut for listings in a Detroit during a given time period, expressed as a percentage (%) of list price.
+
+### Time
+The data was collected weekly across 315 weeks, allowing us to measure data across season and time. 
+
+
+## Machine Learning Models
+
+In our analysis, we employed the following machine learning models:
+
+- Random Forest Regressor (RFR)
+- GradientBoosting Regressor (GBR)
+- Extreme Gradient Boosting (XGB)
+- GridSearchCV (model = XGBRegressor)
+
+These models were compared, and it was determined that XGB performed the worst among them, which is why we used a best fit for that model, in order to create a.
+
+## Usage
+
+Outline how users can utilize your project. Include examples and code snippets to guide them.
+
 
 ## Getting Started
 
@@ -25,7 +53,8 @@ This machine learning project trains 3 different models to predict how much of a
     - `from xgboost import XGBRegressor`
     - `from sklearn.model_selection import GridSearchCV` (for XGBRegressor)
 
-### Steps to Run Machine Learning Models: 
+## Steps & Results: 
+
 1. We loaded the data by reading in the csv file, during which, we designated the `Weeks of pending` as a datetime object using Pandas, because the column was originally stored as strings. 
 
 2. After dropping the null values from the dataframe, we defined the features used for prediction (`x = Mean Price Reduction Percetage`) and the output we want to predict in a our machine learning models (`y = Days to Pending`).
@@ -75,35 +104,6 @@ This machine learning project trains 3 different models to predict how much of a
 
 11. We then used the `GridSearchCV` function from the scikit-learn library to optimize the hyperparameters of the XGB model, because it was our lowest-scoring model with a 99.8% accuracy. The best fit 
 
-
-
-
-## Zillow Data Description
-
-### Days to Pending
-How long it takes homes in a Detroit to change to pending status on Zillow.com after first being shown as for sale. The reported figure indicates the mean number of days that it took for homes that went pending during the week being reported, to go pending.
-
-### Price Cuts
-- CThe mean price cut for listings in a Detroit during a given time period, expressed as a percentage (%) of list price.
-
-### Time
-The data was collected weekly across 315 weeks, allowing us to measure data across season and time. 
-
-
-## Machine Learning Models
-
-In our analysis, we employed the following machine learning models:
-
-- Random Forest Regressor (RFR)
-- GradientBoosting Regressor (GBR)
-- Extreme Gradient Boosting (XGB)
-- GridSearchCV (model = XGBRegressor)
-
-These models were compared, and it was determined that XGB performed the worst among them, which is why we used a best fit for that model, in order to create a.
-
-## Usage
-
-Outline how users can utilize your project. Include examples and code snippets to guide them.
 
 ## Results
 
