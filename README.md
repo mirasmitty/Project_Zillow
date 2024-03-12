@@ -1,9 +1,8 @@
 
 <img style="float: right;" src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/DealOrNoDeal.png">
-Team Members:
 
-*	Stephanie Santiago 
-*	Molleigh Hughes 
+*	Stephanie Santiago     	
+*   Molleigh Hughes 
 *	Hidy Vengalil 
 *	Tasha Christensen 
 *	Miranda Smith
