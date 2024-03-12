@@ -97,6 +97,7 @@ In our analysis, we employed the following machine learning models:
 - Random Forest Regressor (RFR)
 - GradientBoosting Regressor (GBR)
 - Extreme Gradient Boosting (XGB)
+- GridSearchCV (model = XGBRegressor)
 
 These models were compared, and it was determined that XGB performed the worst among them, which is why we used a best fit for that model, in order to create a.
 
