@@ -8,6 +8,10 @@ Zillow Data Description
 # Project Zillow Introduction 
 
 This machine learning project trains 3 different models to predict how much of a price cut (%) a listed house in Detroit will receive based on how long it’s been on the market (weeks of pending)? This project analyzes publicly avaliable Zillow data (previously smoothed by Zillow), and collected on a weekly basis. Our models specifically focus on 315 weeks of data from Detroit (394532 = ID); however, two of the provided weeks did not have any data, and thus, deemed as Null. After remvoing the weeks of April 11, 2020 and September 9, 2021, the machine learning models used 313 weeks of Detroit data. 
+* [Advanced-Regression-Analysis-Reference] found on GitHub and open for use to others. 
+
+[Advanced-Regression-Analysis-Reference]: https://github.com/tatha04/Housing-Prices-Advanced-Regression-Techniques/blob/main/Housing.ipynb
+
 
 ## Zillow Data Description
 
@@ -105,8 +109,5 @@ Outline how users can utilize your project. Include examples and code snippets t
 11. We then used the `GridSearchCV` function from the scikit-learn library to optimize the hyperparameters of the XGB model, because it was our lowest-scoring model with a 99.8% accuracy. The best fit 
 
 
-* [Advanced-Regression-Analysis-Reference] found on GitHub and open for use to others. 
-
-[Advanced-Regression-Analysis-Reference]: https://github.com/tatha04/Housing-Prices-Advanced-Regression-Techniques/blob/main/Housing.ipynb
 
 ---
