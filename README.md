@@ -1,5 +1,5 @@
 
-<img style="float: right;" src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/DealOrNoDeal.png">
+<img style="float: center;" src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/DealOrNoDeal.png">
 
 # `Deal or No Deal?` 
 ## Zillow Price Cut Prediction Introduction 
