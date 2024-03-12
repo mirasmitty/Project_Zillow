@@ -34,11 +34,7 @@ In our analysis, we employed the following machine learning models:
 - Extreme Gradient Boosting (XGB)
 - GridSearchCV (model = XGBRegressor)
 
-These models were compared, and it was determined that XGB performed the worst among them, which is why we used a best fit for that model, in order to create a.
-
-## Usage
-
-Outline how users can utilize your project. Include examples and code snippets to guide them.
+These models were compared, and it was determined that XGB performed the worst among them, which is why we used a best fit for that model by using GridSearchCV.
 
 
 ## Getting Started
@@ -120,6 +116,9 @@ Outline how users can utilize your project. Include examples and code snippets t
         * The results of the XGBR Model metrics reveal important information about our XGBR model: 
             * <samp>A high R-squared value, 0.998024236380367, indicates that the model explains a large portion of the varaince in the target variable, approximately 99.80%. Interestingly, this is our lowest scoring model. </samp>
 * <ins>Summary</ins>: the outcome metrics for the XGBRegressor Model indicate excellent performance. The model is explaining a large proportion  of the variance in the target variable, approximately 99.80%, and the predictions are very accurate. As this is our lowest scoring model, we will attempt to find the "best fit" for this model. 
+<p align="center">
+<img src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/RFR_GBR_XGBR_Plot.png" width="600" height="500" border="10"/>
+</p>
 
 11. We then used the `GridSearchCV` function from the scikit-learn library to optimize the hyperparameters of the XGB model, because it was our lowest-scoring model with a 99.8% accuracy. The best fit 
 
