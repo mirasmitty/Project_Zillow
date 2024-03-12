@@ -105,11 +105,7 @@ Outline how users can utilize your project. Include examples and code snippets t
 11. We then used the `GridSearchCV` function from the scikit-learn library to optimize the hyperparameters of the XGB model, because it was our lowest-scoring model with a 99.8% accuracy. The best fit 
 
 
-## Results
-
-Highlight key findings or results from your analysis.
-
-[Advanced-Regression-Analysis-Reference]
+[Advanced-Regression-Analysis-Reference] found on GitHub and open for use to others. 
 
 [Advanced-Regression-Analysis-Reference]: https://github.com/tatha04/Housing-Prices-Advanced-Regression-Techniques/blob/main/Housing.ipynb
 
