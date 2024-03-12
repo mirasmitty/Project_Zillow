@@ -53,7 +53,7 @@ These models were compared, and it was determined that XGB performed the worst a
     - `from xgboost import XGBRegressor`
     - `from sklearn.model_selection import GridSearchCV` (for XGBRegressor)
 
-## Steps & Results: 
+## Steps: 
 
 1. We loaded the data by reading in the csv file, during which, we designated the `Weeks of pending` as a datetime object using Pandas, because the column was originally stored as strings. 
 
@@ -124,6 +124,12 @@ These models were compared, and it was determined that XGB performed the worst a
 <p align="center">
 <img src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/ALL_MODELS_PLOT.png" width="600" height="500" border="10"/>
 </p>
+
+## Results:
+<p align="center">
+<img src="" width="600" height="500" border="10"/>
+</p>
+
 
 
 ---
