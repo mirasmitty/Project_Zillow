@@ -1,12 +1,6 @@
 
 <img style="float: right;" src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/DealOrNoDeal.png">
 
-*	Stephanie Santiago     	
-*   Molleigh Hughes 
-*	Hidy Vengalil 
-*	Tasha Christensen 
-*	Miranda Smith
-
 # `Deal or No Deal?` 
 ## Zillow Price Cut Prediction Introduction 
 
