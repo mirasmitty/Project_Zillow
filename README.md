@@ -7,7 +7,7 @@ Zillow Data Description
 
 # Project Zillow Introduction
 
-This machine learning project aims to train our models to predict how much of a price cut (%) a listed house in Detroit will receive based on how long it’s been on the market (number of weeks)? This project analyzes publicly avaliable Zillow data (previously smoothed by Zillow), and collected on a weekly basis. Our models specifically focus on 315 weeks of data from Detroit (394532 = ID); however, two weeks on this data were designated as Null. Therefore, after remvoing the week of April 11, 2020 & September 9, 2021, the machine learning models used 313 weeks of Detroit data. 
+This machine learning project trains 3 different models to predict how much of a price cut (%) a listed house in Detroit will receive based on how long it’s been on the market (weeks of pending)? This project analyzes publicly avaliable Zillow data (previously smoothed by Zillow), and collected on a weekly basis. Our models specifically focus on 315 weeks of data from Detroit (394532 = ID); however, two of the provided weeks did not have any data, and thus, deemed as Null. After remvoing the week of April 11, 2020 & September 9, 2021, the machine learning models used 313 weeks of Detroit data. 
 
 ## Getting Started
 
@@ -33,7 +33,10 @@ This machine learning project aims to train our models to predict how much of a 
 4. After creating the Standar Scaler, fitting the Standard Scaler, and scaling the data, we used the `RandomForestRegressor` function from the scikit-learn library to train our Random Forest Regressor model.
     * Then, we extract the feature importances from a trained Random Forest model (`rf_model`) using the `feature_importances` attribute 
         * `Feature importance`: a measure of the contribution of each feature to the model's predictive performance
-5. Finally, the feature importances are visulalzied using a horizontal bar plot. The features are shown on the y-axis and their importances are represented by the length of the bars. The Title of the plot is set to `Feature Importance` and the x-axis is set to `Feature Importance`; This visualization provides insights inot which features are more influential in making predictions with the Random Forest Regressor model. 
+5. The Feature Importances are visulalzied using a horizontal bar plot. The features are shown on the y-axis and their importances are represented by the length of the bars. This visualization provides insights into which features are more influential in making predictions with the Random Forest Regressor model. 
+<p align="center">
+<img src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/Features%20Importances%20Horizontal%20Plot.png" width="200" height="300" border="10"/>
+</p>
 
 
 ## Zillow Data Description
