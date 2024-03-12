@@ -27,12 +27,16 @@ This machine learning project trains 3 different models to predict how much of a
 
 ### Steps to Run Machine Learning Models: 
 1. We loaded the data by reading in the csv file, during which, we designated the `Weeks of pending` as a datetime object using Pandas, because the column was originally stored as strings. 
+
 2. After dropping the null values from the dataframe, we defined the features used for prediction (`x = Mean Price Reduction Percetage`) and the output we want to predict in a our machine learning models (`y = Days to Pending`).
+
 3. We then used the `train_test_split` function from skscikit-learn library to split the features (`x`) and the target variable (`y`) into training and testing sets. The resulting variables `x_train`, `x_test`, `y_train`, and `y_test` store the training & testing sets for both features and the target variable. 
     * After this step, we use `x_train` and `y_train` for training our machine learning models, and `x_test` and `y_test` for evaluating its performance on unseen data. This design is used to assess how well the model generalizes to new, unseen observations.
+
 4. After creating the Standar Scaler, fitting the Standard Scaler, and scaling the data, we used the `RandomForestRegressor` function from the scikit-learn library to train our Random Forest Regressor model.
     * Then, we extract the feature importances from a trained Random Forest model (`rf_model`) using the `feature_importances` attribute 
         * `Feature importance`: a measure of the contribution of each feature to the model's predictive performance
+        
 5. The Feature Importances are visualized using a horizontal bar plot. The features are shown on the y-axis and their importances are represented by the length of the bars. This visualization provides insights into which features are more influential in making predictions with the Random Forest Regressor model. 
 <p align="center">
 <img src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/Features%20Importances%20Horizontal%20Plot.png" width="600" height="400" border="10"/>
@@ -43,6 +47,9 @@ This machine learning project trains 3 different models to predict how much of a
 <img src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/Seaborn%20HeatMap%20Missing%20Values.png" width="500" height="450" border="10"/>
 </p>
 
+7. During our preprocessing steps, we used the `OneHotEncoder` function from the scikit-learn library to encode the categorical features as binary vector of 0s and 1s, where each position in the vector corresponds to a unique category.
+
+8. 
 
 ## Zillow Data Description
 
