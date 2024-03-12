@@ -21,8 +21,11 @@ In our analysis, we employed the following machine learning models:
 
 - **Random Forest Regressor** (RFR): a versatile machine-learning approach that leverages the predictions of numerous decision trees to mitigate overfitting and enhance accuracy. RFR is a supervised learning algorithm and can be applied to both classification and regression. 
 - **GradientBoosting Regressor** (GBR): a machine learning algorithm that works by sequentially fitting multiple decision trees, where each tree corrects the errors of the previous one. GBR is well-suited for regression tasks, aiming to predict continuous numerical values. This iterative process gradually improves the model's predictive accuracy, and combines the predictive power of multiple weak learners (decision trees) to create a robust and accurate predictive model. 
-- **Extreme Gradient Boosting Regressor** (XGBR):
-- **GridSearchCV** (model = XGBRegressor):
+- **Extreme Gradient Boosting** (XGBoost): is an optimized distributed gradient boosting library, primmarily used for regression tasks, that excels in predictive modeling tasks. 
+    *   XGBoost provides a parallel tree boosting that solves many data science problems by utilizing techniques like *parallelization*, *tree pruning*, and *cache awareness* to achieve extreme speed during model training. 
+    *   XGBoost employs Feature Importances to help identify the most important features in the dataset, which are calculated based on how frequently each feature is used in tree-based decisions & how much each feature reduces the loss function.
+    *   XGBoost is widley used in machine learning competitions and industry applications; for example, XGBoost is often the winning solution for many Kaggle competitions. 
+- **GridSearchCV** (model = XGBoost): is a technique used for hyperparameter tuning in  machine learning; hyperparameters are parameters that are set *before* the learning process beings, and are not learned from the data, but instead, are set based on domain knowledge or through a process of trial and error. Hyperparameters significantly affect the performance & behavior of the model.
 
 These models were compared, and it was determined that XGB performed the worst among them, which is why we used a best fit for that model by using GridSearchCV.
 
