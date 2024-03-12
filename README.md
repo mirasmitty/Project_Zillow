@@ -25,9 +25,12 @@ In our analysis, we employed the following machine learning models:
     *   XGBoost provides a parallel tree boosting that solves many data science problems by utilizing techniques like *parallelization*, *tree pruning*, and *cache awareness* to achieve extreme speed during model training. 
     *   XGBoost employs Feature Importances to help identify the most important features in the dataset, which are calculated based on how frequently each feature is used in tree-based decisions & how much each feature reduces the loss function.
     *   XGBoost is widley used in machine learning competitions and industry applications; for example, XGBoost is often the winning solution for many Kaggle competitions. 
-- **GridSearchCV** (model = XGBoost): is a technique used for hyperparameter tuning in  machine learning; hyperparameters are parameters that are set *before* the learning process beings, and are not learned from the data, but instead, are set based on domain knowledge or through a process of trial and error. Hyperparameters significantly affect the performance & behavior of the model.
+- **GridSearchCV** (model = XGBoost): is a technique used for hyperparameter tuning in  machine learning; and is a function provided by libraries like scikit-learn that exhaustively searches through all possible combinations of hyperparameters in the grid, trains and evaluates the models for each combination using cross-validation, and selects the combination that produces the best performance metric.
+    *    Hyperparameters are parameters that are set *before* the learning process beings, and are not learned from the data, but instead, set based on domain knowledge or through a process of trial and error. Hyperparameters significantly affect the performance & behavior of the model.
+    *   GridSearch is a method used to search for the optimal combination of hyperparameters for a given model, and for each combination of hyperparameters in the grid, the model is trained and evaluated using cross-validation. 
+    *   Cross-validation is a technique used to assess the performance of a model by splitting the dataset into multiple subsets (folds), training the model on a subset of the data, and evaluating it on the remaining subset. This process is repeated multiple times, with different subsets used for training and evaluation each time, to ensure robustness of the results. 
 
-These models were compared, and it was determined that XGB performed the worst among them, which is why we used a best fit for that model by using GridSearchCV.
+These models were compared, and it was determined that although the R^{2} Extreme Gradient Boosting performed the worst among them at 99.80%, which is why we optimized the XGBoost model by using GridSearchCV in order to create "a best fit" for that particular model. 
 
 
 ## Getting Started
