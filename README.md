@@ -40,7 +40,7 @@ This machine learning project trains 3 different models to predict how much of a
 
 6. Next, we imported seaborn to build a Heatmap of our "missing values"; however, because we previously filtered out our null values, we did not see any missing values in our dataset. This provides reasurrance that our data is ready for our other machine learning models. 
 <p align="center">
-<img src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/Seaborn%20HeatMap%20Missing%20Values.png" width="800" height="700" border="10"/>
+<img src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/Seaborn%20HeatMap%20Missing%20Values.png" width="600" height="650" border="10"/>
 </p>
 
 
