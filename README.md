@@ -1,8 +1,10 @@
-Zillow Data Description
-- `Days to Pending`: How long it takes homes in a region to change to pending status on Zillow.com after first being shown as for sale. The reported figure indicates the number of days (mean or median) that it took for homes that went pending during the week being reported, to go pending. This differs from the old “Days on Zillow” metric in that it excludes the in-contract period before a home sells.
-- `Share of Listings With a Price Cut`: The number of unique properties with a list price at the end of the month that’s less than the list price at the beginning of the month, divided by the number of unique properties with an active listing at some point during the month.
-- `Price Cuts`: The mean and median price cut for listings in a given region during a given time period, expressed as both dollars ($) and as a percentage (%) of list price.
+Team Members:
 
+*	Stephanie Santiago 
+*	Molleigh Hughes 
+*	Hidy Vengalil 
+*	Tasha Christensen 
+*	Miranda Smith
 ---
 
 # Project Zillow Introduction 
@@ -12,25 +14,16 @@ This machine learning project trains 3 different models to predict how much of a
 
 [Advanced-Regression-Analysis]: https://github.com/tatha04/Housing-Prices-Advanced-Regression-Techniques/blob/main/Housing.ipynb
 
-Team Members:
 
-•	Stephanie Santiago 
-•	Molleigh Hughes 
-•	Hidy Vengalil 
-•	Tasha Christensen 
-•	Miranda Smith
+## Zillow's Data Description
+- `Days to Pending`: This metric measures the duration it takes for homes in a specific area to transition from being listed for sale to pending status on Zillow.com. It reflects the average or median number of days it took for homes that entered pending status within the reported week. Unlike the previous "Days on Zillow" metric, Days to Pending excludes the time period during which a home is under contract before it is sold.
+- `Share of Listings With a Price Cut`: This metric calculates the proportion of distinct properties that have a final list price at the conclusion of the month lower than the initial list price at the beginning of the month. It is determined by dividing the number of unique properties with a reduced list price by the total number of unique properties that had an active listing at any time during the month.
+- `Price Cuts`: This data presents the average and median reduction in listing prices within a specified region over a certain timeframe. It is represented both in monetary terms ($) and as a <ins>percentage (%) of the original list price</ins>.
 
-
-
-## Zillow Data Description
-
-### Days to Pending
-How long it takes homes in a Detroit to change to pending status on Zillow.com after first being shown as for sale. The reported figure indicates the mean number of days that it took for homes that went pending during the week being reported, to go pending.
-
-### Price Cuts
+#### Price Cuts
 - CThe mean price cut for listings in a Detroit during a given time period, expressed as a percentage (%) of list price.
 
-### Time
+#### Time
 The data was collected weekly across 315 weeks, allowing us to measure data across season and time. 
 
 
