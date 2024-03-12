@@ -66,8 +66,8 @@ These models were compared, and it was determined that XGB performed the worst a
 
 1. We loaded the data by reading in the csv file, during which, we designated the `Weeks of pending` as a datetime object using Pandas, because the column was originally stored as strings. 
 
-2. After dropping the null values from the dataframe, we defined the features used for prediction (`x = Mean Price Reduction Percetage`) and the output we want to predict in a our machine learning models (`y = Days to Pending`).
-
+2. After dropping the null values from the dataframe, we defined the features used for prediction (`x =weeks of pending , Days to Pending`) and the output we want to predict in a our machine learning models (`y = Mean Price Reduction Percetage`).
+ 
 3. We then used the `train_test_split` function from skscikit-learn library to split the features (`x`) and the target variable (`y`) into training and testing sets. The resulting variables `x_train`, `x_test`, `y_train`, and `y_test` store the training & testing sets for both features and the target variable. 
     * After this step, we use `x_train` and `y_train` for training our machine learning models, and `x_test` and `y_test` for evaluating its performance on unseen data. This design is used to assess how well the model generalizes to new, unseen observations.
 
