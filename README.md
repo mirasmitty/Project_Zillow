@@ -89,6 +89,12 @@ Outline how users can utilize your project. Include examples and code snippets t
     * The root mean squared error is 0.00011443424990744863.
     * The standard deviation is 0.005426987263266367.
     * The error is 5.7804842222217705e-05 
+    * The mean absolute error is 0.00011443424990744863.
+        * The results of the RFR Model metrics reveal important information about our RFR Model: 
+            * Because R-squared values range from 0 to 1, where 1 indicates a perfect fit, a score of 0.9995553744147414 indicates that the model explains approximately 99.96% of the variance in the target variable.
+            * A very small (MSE) mean squared error (1.3095197551880405e-08) indicates that, on average, the model's predictions are very close to the actual values.
+            * The standard deviation is a measure of the amount of variation in a set of values. In this context, it's associated with the residuals (the difference between predicted and actual values). A smaller standard deviation (0.005426987263266367) indicates less variability in the residuals.
+
 
 9. We then used the `GradientBoostingRegressor` function from the scikit-learn library and the relevant metrics for GBR Model are as follows:
     * The score is 0.9995463581799123.
