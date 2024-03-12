@@ -8,7 +8,7 @@ Team Members:
 *	Tasha Christensen 
 *	Miranda Smith
 
-# Project Zillow Introduction 
+# `Zillow Price Cut Prediction` Introduction 
 
 This machine learning project develops three distinct models aimed at predicting the percentage of price reduction that a listed house in Detroit is likely to undergo based on its duration on the market (in weeks). The analysis utilizes publicly accessible Zillow data, which has been previously processed by Zillow and is updated on a weekly basis. The focus of the models is on 315 weeks of data specifically from Detroit, identified by the ID 394532. However, it was found that two of the provided weeks lacked data & therefore, were deemed as Null. After removing the weeks of April 11, 2020, & September 9, 2021, the machine learning models were trained using 313 weeks of data from Detroit.
 * [Advanced-Regression-Analysis] reference found on GitHub and available for other's to learn from according to (2021) MIT License
