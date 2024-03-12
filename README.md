@@ -20,13 +20,6 @@ This machine learning project develops three distinct models aimed at predicting
 - `Share of Listings With a Price Cut`: This metric calculates the proportion of distinct properties that have a final list price at the conclusion of the month lower than the initial list price at the beginning of the month. It is determined by dividing the number of unique properties with a reduced list price by the total number of unique properties that had an active listing at any time during the month.
 - `Price Cuts`: This data presents the average and median reduction in listing prices within a specified region over a certain timeframe. It is represented both in monetary terms ($) and as a **percentage (%) of the original list price**.
 
-#### Price Cuts
-- CThe mean price cut for listings in a Detroit during a given time period, expressed as a percentage (%) of list price.
-
-#### Time
-The data was collected weekly across ~~315~~313 weeks, allowing us to measure data across season and time. 
-
-
 ## Machine Learning Models
 
 In our analysis, we employed the following machine learning models:
