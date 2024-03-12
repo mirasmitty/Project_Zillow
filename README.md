@@ -103,6 +103,10 @@ Outline how users can utilize your project. Include examples and code snippets t
     * The root mean squared error is 0.00011558869070961833.
     * The standard deviation is 0.005426987263266367.
     * The error is 6.293934425514186e-05 
+        * The results of the GBR Model metrics reveal important information about our RFR Model: 
+            * <samp>The score (R-squared) is a measure of how well the regression model explains the variance in the target variable. A high R-squared value, 0.9995463581799123, indicates that the model explains a large portion of the variance in the target variable, approximately 99.95%. </samp>
+            * <samp>The root mean squared error is the square root of the mean sqaured error and is expressed in the same units as the target variable. A small RMSE (0.00011558869070961833) suggests that, on average, the model's predictinos are close to the actual values.</samp>
+            * <samp>A small error value (6.293934425514186e-05 = 0.00006293934425514186) suggests that, on average, the model's predictions are very close to the actual values</samp>
 
 10. We then used the `XGBRegressor` function from the scikit-learn library and the relevant metrics for XGB Model are as follows:
     * The score is 0.998024236380367.
