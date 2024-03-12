@@ -134,12 +134,12 @@ These models were compared, and it was determined that XGB performed the worst a
 <img src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/ALL_MODELS_PLOT.png" width="600" height="500" border="10"/>
 </p>
 
-* *Negative mean absolute error* is a performance metric used in regression problems, typically with machine learning. The mean absolute error ({$MAE}) is a measure of the average absolute differences between the predicted and actual values. The negative version is used in certain libraries like scikit-learn for optimization purposes, as it aligns with the convention that high values are better for the optimization process. 
-    * Mean Absolute Error (MAE): is calculated as the averaage of the absolute differences between predicted and actual values.
+* *Negative mean absolute error* is a performance metric used in regression problems, typically with machine learning. The mean absolute error (MAE) is a measure of the average absolute differences between the predicted and actual values. The negative version is used in certain libraries like scikit-learn for optimization purposes, as it aligns with the convention that high values are better for the optimization process. 
+    * Mean Absolute Error (MAE): is calculated as the average of the absolute differences between predicted and actual values.
         *  $MAE = {1 \over n} \sum{^n_{i=1}} |y_i - \hat{y}_i|$ , where $n$ is the number of samples, $y_i$ is the actual value and $\hat{y}_i$ is the predicted value.
     * Negative Mean Absolute Error (NMAE): 
         * In some optimization frameworks like scikit-learn's GridSearchCV, the goal is to maximize the scoring metric during hyperparameter tuning.
-            * Since lower $MAE values are desired (indicating better model performance), negating the $MAE makes it consistent with the optimization goal. The larger the negated $MAE, the better the model performance. 
+            * Since lower *MAE* values are desired (indicating better model performance), negating the MAE makes it consistent with the optimization goal. The larger the negated MAE, the better the model performance. 
 
     
 
