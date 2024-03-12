@@ -30,7 +30,7 @@ In our analysis, we employed the following machine learning models:
     *   GridSearch is a method used to search for the optimal combination of hyperparameters for a given model, and for each combination of hyperparameters in the grid, the model is trained and evaluated using cross-validation. 
     *   Cross-validation is a technique used to assess the performance of a model by splitting the dataset into multiple subsets (folds), training the model on a subset of the data, and evaluating it on the remaining subset. This process is repeated multiple times, with different subsets used for training and evaluation each time, to ensure robustness of the results. 
 
-These models were compared, and it was determined that although the R^{2} Extreme Gradient Boosting performed the worst among them at 99.80%, which is why we optimized the XGBoost model by using GridSearchCV in order to create "a best fit" for that particular model. 
+These models were compared, and it was determined that although the r-squared of Extreme Gradient Boosting performed at 99.80%, it was the lowest scoring of our models.As a result, in hopes of discovering if we could create an even better version of the XGBoost Model, we optimized the XGBoost model using GridSearchCV to create "a best fit" for the XGBoost model. 
 
 
 ## Getting Started
