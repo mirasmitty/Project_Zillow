@@ -106,7 +106,7 @@ These models were compared, and it was determined that XGB performed the worst a
             * <samp>A small error value (6.293934425514186e-05 = 0.00006293934425514186) suggests that, on average, the model's predictions are very close to the actual values</samp>
 * <ins>GBR Summary</ins>: the outcome metrics for the GradientBoostingRegressor Model indicate excellent performance. The model is explaining a large proportion  of the variance in the target variable, approximately 99.95%, and the predictions are very accurate. 
 
-10. We then used the `XGBRegressor` function from the scikit-learn library and the relevant metrics for XGB Model are as follows:
+10. We then used the `ExtremeGradientBoosting` function from the scikit-learn library and the relevant metrics for XGBR Model are as follows:
     * The score is 0.998024236380367.
     * The r2 is 0.998024236380367.
     * The mean squared error is 5.8190567013516395e-08.
