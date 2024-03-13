@@ -138,11 +138,11 @@ These models were compared, and it was determined that although the r-squared of
 <img style="float: center;" src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/all_models_results.png">
 
 ### Mean Days Listing to Pending Trends
-- Notice the dramatic drop the number of days from June 2020 to June 2022!
+- This image is essentially illustrating the mean number of days a house in Detroit waiting before being purchased. Notice the dramatic drop the number of days the houses are on the market from June 2020 to June 2022
 <img style="float: center;" src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/TableauMeanDaysToPending.png">
 
 ### Mean Price Reduction Percentage Trends
-- Notice the dramatic drop in the Price Reduction Percentage (%) from June 2020 to February 2021!
+- This final image illustrates the mean price reduction (%) across time. It is interesting to note the lowest price reduction (%) occured during June 2020 at around 35% price reduction; while the highest price reduction (%) occured during June 2022 at around 56% mean price reduction.
 <img style="float: center;" src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/TableauPriceReductions.png">
 
 ---
