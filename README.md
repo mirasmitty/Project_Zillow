@@ -4,7 +4,7 @@
 # `Deal or No Deal?` 
 ## Zillow Price Cut Prediction Introduction 
 
-This machine learning project develops three distinct models aimed at predicting the percentage of price reduction that a listed house in Detroit is likely to undergo based on its duration on the market (in weeks). The analysis utilizes publicly accessible Zillow data, which has been previously processed by Zillow and is updated on a weekly basis. The focus of the models is on 315 weeks of data specifically from Detroit, identified by the ID 394532. However, it was found that two of the provided weeks lacked data & therefore, were deemed as Null. After removing the weeks of April 11, 2020, & September 9, 2021, the machine learning models were trained using 313 weeks of data from Detroit.
+Our machine learning project develops 3 different models aimed at predicting the percentage of price reduction that a listed house in Detroit is likely to undergo based on its duration on the market (in weeks). This analysis utilizes publicly accessible Zillow data, which has been previously processed by Zillow and is updated on a weekly basis. The models focus on the 315 weeks of data specifically from Detroit, identified by the ID 394532. However, two of the provided weeks lacked data & were deemed as Null. After removing the weeks of April 11, 2020, & September 9, 2021, the machine learning models were trained using 313 weeks of data from Detroit.
 * [Advanced-Regression-Analysis] reference found on GitHub and available for other's to learn from according to (2021) MIT License
 
 [Advanced-Regression-Analysis]: https://github.com/tatha04/Housing-Prices-Advanced-Regression-Techniques/blob/main/Housing.ipynb
@@ -20,11 +20,14 @@ This machine learning project develops three distinct models aimed at predicting
 In our analysis, we employed the following machine learning models:
 
 - **Random Forest Regressor** (RFR): a versatile machine-learning approach that leverages the predictions of numerous decision trees to mitigate overfitting and enhance accuracy. RFR is a supervised learning algorithm and can be applied to both classification and regression. 
+
 - **GradientBoosting Regressor** (GBR): a machine learning algorithm that works by sequentially fitting multiple decision trees, where each tree corrects the errors of the previous one. GBR is well-suited for regression tasks, aiming to predict continuous numerical values. This iterative process gradually improves the model's predictive accuracy, and combines the predictive power of multiple weak learners (decision trees) to create a robust and accurate predictive model. 
+
 - **Extreme Gradient Boosting** (XGBoost): is an optimized distributed gradient boosting library, primarily used for regression tasks, that excels in predictive modeling tasks. 
     *   XGBoost provides a parallel tree boosting that solves many data science problems by utilizing techniques like *parallelization*, *tree pruning*, and *cache awareness* to achieve extreme speed during model training. 
     *   XGBoost employs Feature Importances to help identify the most important features in the dataset, which are calculated based on how frequently each feature is used in tree-based decisions & how much each feature reduces the loss function.
     *   XGBoost is widley used in machine learning competitions and industry applications; for example, XGBoost is often the winning solution for many Kaggle competitions. 
+    
 - **GridSearchCV** (model = XGBoost): is a technique used for hyperparameter tuning in  machine learning; and is a function provided by libraries like scikit-learn that exhaustively searches through all possible combinations of hyperparameters in the grid, trains and evaluates the models for each combination using cross-validation, and selects the combination that produces the best performance metric.
     *    Hyperparameters are parameters that are set *before* the learning process beings, and are not learned from the data, but instead, set based on domain knowledge or through a process of trial and error. Hyperparameters significantly affect the performance & behavior of the model.
     *   GridSearch is a method used to search for the optimal combination of hyperparameters for a given model, and for each combination of hyperparameters in the grid, the model is trained and evaluated using cross-validation. 
