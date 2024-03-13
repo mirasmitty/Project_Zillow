@@ -132,7 +132,9 @@ These models were compared, and it was determined that although the r-squared of
 
 ## Conclusion
 
-*   Each of our models and their results: 
+*   The following chart illustrates that our Random Forest Regressor, Gradient Boosting Regressor, and Extreme Gradient Boosting all scored at above 99%
+    * The Mean Square Error for each model is very small, and suggests the model's predictions are very close to the actual values
+    * The Root Mean Square Error for each model are rather small numbers, which suggests that, on average, the model's predictions are close to the actual values.
 <img style="float: center;" src="https://github.com/mirasmitty/Project_Zillow/blob/main/Resources/all_models_results.png">
 
 ### Mean Days Listing to Pending Trends
